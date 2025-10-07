@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var timer = setInterval(function(){olock()}, 1000);
       
       // 1. Đặt nguồn nhạc
-      audioEl.setAttribute("src", `music/${music[Math.floor(Math.random()*music.length)]}.mp3`);
+      audioEl.setAttribute("src", `music/${music[Math.floor(Math.random()*music.length)]}.mp3?v=${cacheBuster}`);
 
       // 2. Thêm sự kiện để phát nhạc khi người dùng tương tác
       document.body.addEventListener('touchstart', function() {
