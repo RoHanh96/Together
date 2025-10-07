@@ -62,10 +62,12 @@ time {
 }
 
 .avt {
-      width: 160px;
-      height: 160px;
+      width: 250px; /* Tăng kích thước khung hình tròn */
+      height: 250px; /* Tăng kích thước khung hình tròn */
       border-radius: 50%;
       box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+      /* Bổ sung để đảm bảo ảnh không bị méo và lấp đầy khung hình tròn */
+      object-fit: cover; 
 }
 
 #info {
@@ -133,8 +135,8 @@ footer {
       }
 
       .avt {
-            width: 120px;
-            height: 120px;
+            width: 180px; /* Tăng kích thước khung hình tròn */
+            height: 180px; /* Tăng kích thước khung hình tròn */
       }
 
       #info .one, #info .two{
