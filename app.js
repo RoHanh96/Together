@@ -1,5 +1,7 @@
 const yourDate = new Date("2025-10-07T03:00:00"),
-music = ['buc-thu-tinh-thu-hai', 'my-love', 'noi-nay-co-anh', 'nothing-gonna-change-my-love-for-you', 'tung-ngay-yeu-em'];
+music = ['buc-thu-tinh-thu-hai', 'my-love', 'noi-nay-co-anh', 'nothing-gonna-change-my-love-for-you', 
+         'tung-ngay-yeu-em', 'mot-doi',
+         'ngay-ta-co-nhau', 'yeu-la-tha-thu', 'mot-nha'];
 
 const cacheBuster = new Date().getTime();
 
