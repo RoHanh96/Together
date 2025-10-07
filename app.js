@@ -1,6 +1,8 @@
 const yourDate = new Date("2025-10-07T03:00:00"),
 music = ['buc-thu-tinh-thu-hai', 'my-love', 'noi-nay-co-anh', 'nothing-gonna-change-my-love-for-you', 'tung-ngay-yeu-em'];
 
+const cacheBuster = new Date().getTime();
+
 document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
       var audioEl = document.querySelector("audio"); // Lấy thẻ audio
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const randomMusic = music[Math.floor(Math.random() * music.length)];
       
       // 1. Đặt nguồn nhạc
-      audioEl.setAttribute("src", `music/${music[Math.floor(Math.random()*music.length)]}.mp3?v=${cacheBuster}`);
+      audioEl.setAttribute("src", `music/${music[Math.floor(Math.random()*music.length)]}.mp3`);
 
       // 2. Thêm sự kiện để phát nhạc khi người dùng tương tác
       document.body.addEventListener('touchstart', function() {
