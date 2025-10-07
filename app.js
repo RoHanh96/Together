@@ -1,5 +1,5 @@
 const yourDate = new Date("2025-10-07T03:00:00"),
-music = ['kousui', 'thuongemdengia', 'yeuemratnhieu'];
+music = ['buc-thu-tinh-thu-hai', 'my-love', 'noi-nay-co-anh', 'nothing-gonna-change-my-love-for-you', 'tung-ngay-yeu-em'];
 
 document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
       } olock();
       var timer = setInterval(function(){olock()}, 1000);
       const cacheBuster = new Date().getTime();
+      const randomMusic = music[Math.floor(Math.random() * music.length)];
       
       // 1. Đặt nguồn nhạc
       audioEl.setAttribute("src", `music/${music[Math.floor(Math.random()*music.length)]}.mp3?v=${cacheBuster}`);
